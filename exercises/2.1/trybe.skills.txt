@@ -1,6 +1,0 @@
-exercises/3.1
-Python
-Git
-Html
-CSS
-master
