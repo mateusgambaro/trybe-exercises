@@ -1,7 +1,15 @@
-let name = "Mateus";
+let patientId = 50;
+let isEnrolled = true;
+const patientInfo = {
+  firstName: 'Ana',
+  lastName: 'Santos',
+};
+const patientEmail = 'ana@email.com';
 
-let birthCity = "Sorocaba";
+let name ="Ana";
 
-let birthYear = "1996";
+console.log (typeof patientId, typeof isEnrolled);
 
-console.log(name,birthCity,birthYear);
+console.log (typeof patientInfo, typeof patientEmail);
+
+
