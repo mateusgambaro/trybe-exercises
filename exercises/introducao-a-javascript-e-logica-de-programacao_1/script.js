@@ -95,4 +95,20 @@ function eMaiorTres (a,b,c){
         console.log (false);
     }
 
+    // 6. Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+
+    let pecaXadrez = "bispo";
+    console.log(pecaXadrez);
+
+    let bispo = "diagonal";
+
+        switch (bispo){
+            case "diagonal":
+             console.log("segue!");
+             break;
+
+             case "reto":
+              console.log ("erro!");
+              break;
+        }
 
