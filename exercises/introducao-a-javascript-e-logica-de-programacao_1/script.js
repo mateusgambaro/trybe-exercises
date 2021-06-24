@@ -112,3 +112,36 @@ function eMaiorTres (a,b,c){
               break;
         }
 
+    // 7. Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F.
+
+    let nota = 10;
+
+    let notaA= nota >= 90;
+    let notaB = nota >= 80;
+    let notaC = nota >= 70;
+    let notaD = nota >= 60;
+    let notaE = nota >= 50;
+    let notaF = nota < 50;
+
+    if ((notaA) && (nota<=100)){
+        console.log("A");
+    }
+    else if (notaB){
+        console.log("B");
+    }
+    else if (notaC){
+        console.log("C");
+    }
+    else if (notaD){
+        console.log("D");
+    }
+    else if (notaE){
+        console.log("E");
+    }
+    else if (notaF){
+        console.log("F");
+    }
+    else{
+        console.log("ERRO");
+    }
+
