@@ -43,3 +43,18 @@ for (index = 0; index < numbers.length; index +=1){
 
     console.log (numMax);
 }
+
+// 6. Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado"
+
+for (index = 0; index < numbers.length; index += 1){
+    if(numbers [index] % 3 === 0){
+     console.log("número é ímpar");
+    }
+
+    else if(numbers [index] % 2 === 0){
+        console.log ("número é par");
+    }
+    
+    }
+
+    
