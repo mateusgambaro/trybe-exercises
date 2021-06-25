@@ -15,3 +15,11 @@ for (index = 0; index < numbers.length; index += 1){
 }
 
 console.log (total);
+
+// 3. Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no arra
+
+for (index = 0; index < numbers.length; index += 1){
+    total += numbers[index];
+}
+
+console.log ((total / 20));
