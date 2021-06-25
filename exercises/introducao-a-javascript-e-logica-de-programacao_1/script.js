@@ -182,3 +182,25 @@ function eMaiorTres (a,b,c){
     else{
         console.log("erro");
     }
+
+    // 11. Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+
+    let salario = 1500.94;
+   
+    // INSS.
+
+    if (salario <= 1556.94){
+        (console.log ((salario * 0.08)))
+    }
+
+    if(salario >= 1557 < 2594.92){
+        console.log (salario * 0.09);
+    }
+
+    if (salario >= 2594.93 < 5189.82){
+        console.log (salario * 0.11);
+    }
+
+    if (salario > 5189.82){
+        console.log (salario + 570.88);
+    }
