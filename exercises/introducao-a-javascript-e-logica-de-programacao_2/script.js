@@ -57,4 +57,15 @@ for (index = 0; index < numbers.length; index += 1){
     
     }
 
+// 7. Utilizando for , descubra qual o menor valor contido no array e imprima-o
+
+
+for (index = 0; index < numbers.length; index +=1){
+    let numMax = numbers.reduce(function(a,b){
+        return Math.min(a,b);
+    });
+
+    console.log (numMax);
+}
+
     
