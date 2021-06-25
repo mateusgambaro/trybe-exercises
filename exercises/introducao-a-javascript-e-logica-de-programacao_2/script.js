@@ -34,3 +34,12 @@ else {
     console.log ("valor menor ou igual a 20");
 }
 
+// 5. Utilizando for , descubra qual o maior valor contido no array e imprima-o
+
+for (index = 0; index < numbers.length; index +=1){
+    let numMax = numbers.reduce(function(a,b){
+        return Math.max(a,b);
+    });
+
+    console.log (numMax);
+}
