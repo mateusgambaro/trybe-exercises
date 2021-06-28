@@ -40,3 +40,24 @@ return indice;
 
 
 console.log(maxNumber(arrayTest));
+
+// 3. Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+let array = [2, 3, 96, 7, 10, 1];
+
+function minNumber (array){
+
+    let menor = [];
+    let index = 0;
+    
+
+    for (let i = 0; i < array.length; i++){
+        if(array[i] < menor){
+            menor = array[i];
+            index = i;
+        }
+    }
+    return index;
+}
+
+console.log(minNumber(array));
