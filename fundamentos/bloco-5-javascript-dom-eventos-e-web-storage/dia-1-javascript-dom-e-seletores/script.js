@@ -25,3 +25,12 @@ function corrigeH1 (h1){
     document.querySelector(h1).innerText = "Exercício 5.1 - JavaScript"
 }
 corrigeH1("#title");
+
+// 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
+function paragraphUpperCase (){
+    let paragraph = document.getElementsByTagName('p')[0];
+
+    paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+}
+   paragraphUpperCase();
