@@ -8,4 +8,10 @@ function changeColor (elements, color){
     document.querySelectorAll(elements)[0].style.backgroundColor = color;
 }
 
-changeColor (".center-content", "rgb(76,164,109)");
+changeColor (".main-content", "rgb(76,164,109)");
+
+function changeColor2(elements, color){
+    document.querySelectorAll(elements)[0].style.backgroundColor = color;
+}
+
+changeColor2 (".center-content", "white");
