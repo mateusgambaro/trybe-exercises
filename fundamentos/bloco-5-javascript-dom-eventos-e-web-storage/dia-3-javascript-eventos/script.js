@@ -156,3 +156,19 @@ function newTask (taskText){
   getMyTasks.appendChild(studyTask);
 }
 newTask ('ESTUDAR');
+
+// Exercício 8.
+
+function colorNewTask (color){
+
+  let getMyTasks = document.querySelector('.my-tasks');
+
+  let taskColor = document.createElement('div');
+  taskColor.className = 'task';
+
+  getMyTasks.appendChild(taskColor);
+
+  taskColor.style.backgroundColor = color;
+
+}
+colorNewTask ('yellow');
