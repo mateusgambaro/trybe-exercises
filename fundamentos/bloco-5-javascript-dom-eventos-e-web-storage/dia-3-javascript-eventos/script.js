@@ -97,3 +97,27 @@ createDaysOfTheMonth();
   };
   
   fridayButton('Sexta-feira');
+
+  // Exercício 5.
+
+  function newFridayText (array){
+
+  let getFridayButton = document.querySelector('#btn-friday');
+  let getFridays = document.querySelectorAll ('.friday');
+  let newText = 'DIA DE MALDADE!'
+  
+  
+  getFridayButton.addEventListener('click', function(){
+    for(let index = 0; index < getFridays.length; index += 1){
+      if(getFridays[index].innerHTML !== newText){
+        getFridays[index].innerHTML = newText;
+      }
+      else{
+        getFridays[index].innerHTML = array[index]
+      }
+    }
+  })
+};
+
+let dezFridays = [4, 11, 18, 25];
+newFridayText(dezFridays)
