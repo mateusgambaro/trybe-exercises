@@ -81,3 +81,19 @@ createDaysOfTheMonth();
     })
   };
   holidaysClick();
+
+  // Exercício 4.
+
+  function fridayButton(fridayBt){
+
+    let getButtonContainer = document.querySelector('.buttons-container');
+    let newButtonFriday = document.createElement('button');
+    
+    newButtonFriday.innerHTML = fridayBt;
+    newButtonFriday.id = 'btn-friday';
+    
+
+    getButtonContainer.appendChild(newButtonFriday);
+  };
+  
+  fridayButton('Sexta-feira');
