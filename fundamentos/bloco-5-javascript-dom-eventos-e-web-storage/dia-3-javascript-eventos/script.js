@@ -172,3 +172,24 @@ function colorNewTask (color){
 
 }
 colorNewTask ('yellow');
+
+// Exercício 9.
+
+function newEvent(){
+
+
+  let selectedTask = document.getElementsByClassName('task selected');
+  let getTaskColor = document.querySelector('.task');
+
+  getTaskColor.addEventListener ('click', function(event){
+    if(selectedTask.length === 0){
+      event.target.className = 'task selected';
+    }
+    else {
+      event.target.className = 'task';
+    }
+
+  });
+};
+
+newEvent();
