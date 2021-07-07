@@ -44,3 +44,18 @@ function createDaysOfTheMonth() {
   };
 };
 createDaysOfTheMonth();
+
+// Exercício 2.
+
+  function holidays(buttonName){
+    let getDiv = document.querySelector('.buttons-container');
+    let newButton = document.createElement('button');
+
+    newButton.id = 'btn-holiday';
+    newButton.innerHTML = buttonName;
+
+    getDiv.appendChild(newButton);
+
+
+  };
+  holidays('Feriados');
