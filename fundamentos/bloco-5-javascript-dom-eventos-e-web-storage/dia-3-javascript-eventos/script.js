@@ -144,3 +144,15 @@ function dayMouseOut() {
 
 dayMouseOver();
 dayMouseOut();
+
+// Exercício 7.
+
+function newTask (taskText){
+
+  let getMyTasks = document.querySelector('.my-tasks');
+  let studyTask = document.createElement ('span');
+  studyTask.innerText = taskText;
+
+  getMyTasks.appendChild(studyTask);
+}
+newTask ('ESTUDAR');
