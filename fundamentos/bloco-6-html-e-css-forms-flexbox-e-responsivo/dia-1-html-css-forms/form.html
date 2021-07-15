@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel ="stylesheet" href = "styles.css">
+    <script src = "jquery-3.6.0.min.js"></script>
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class = "container">
+    <h1 class = "display-2">Formulário</h1>
+    </div>
+
+    <div class = "container">
+        <label  class="form-label" for = "input-name">Nome completo</label>
+        <input class="form-control" type = "text" placeholder="Digite seu nome completo" required id = "input-name" name = "name" maxlength="40">
+        <br>
+        <label class="form-label" for = "input-email">Email</label>
+        <input class="form-control" type = "text" placeholder="Digite seu email" required id = "input-email" name = "email" maxlength="50">
+        <br>
+        <label class="form-label" for = "input-cpf">CPF</label>
+        <input class="form-control" type = "text" placeholder="Digite seu cpf" required id = "input-cpf" name = "cpf" maxlength="11">
+        <br>
+    </div>
+
+
+
+  
+    <div class = "container">
+        <label class="form-label" for = "input-address">Endereço</label>
+        <input class="form-control" type = "text" placeholder="Digite seu endereço" required id = "input-address" name = "address" maxlength="100">
+        <br>
+    </div>
+
+    <div class = "container">
+        <label class="form-label" for = "input-city">Cidade</label>
+        <input class="form-control" type = "text" placeholder="Digite a cidade que você mora" required id = "input-city" name = "city" maxlength="28">
+        <br>
+    </div>
+
+    <div class = "container">
+        <label for = "input-state">Estado</label>
+        <select class = "form-select" id = "input-state" name = "state" required>
+    </div>
+    <br>
+    
+    <div class = "form-check">
+        <input class="form-check-input" type = "radio" id = "local1" name = "house-ap" value = "local1" required>
+        <label class ="form-check-label" for="local1">Casa</label>
+    </div>
+    
+    <div  class = "container">
+        <input class="form-check-input" type = "radio" id = "local2" name = "house-ap" value = "local2" required>
+        <label class ="form-check-label" for="local2">Apartamento</label>
+    </div>
+  
+
+   
+        <div class = "container">
+            <div class = "form-floating">
+                <label id = "floatingTextarea2">Mini currículo</label>
+                    <br>
+                    <br>
+                <textarea class = "form-control" name = "curriculum" id = "floatingTextarea2" cols = "30" rows ="10" maxlength="1000" required>
+                </textarea>
+                    <br>
+            </div>
+        <br>
+        <br>
+        
+        <label class = "form-label" for = "input-job">Cargo profissional</label>
+                 <br>
+        <input class = "form-control" type = "text" placeholder="Digite seu cargo" required id = "input-job" name = "job" maxlength="40">
+        <br>
+        <br>
+            <div class = "form-floating">
+                <label id = "job-description">Descrição do cargo profissional</label>
+                 <br>
+                 <br>
+                <textarea  class = "form-control" name = "job-description" id = "job-description" cols = "30" rows ="5" maxlength="500" required>
+                </textarea>
+            </div>
+        <br>
+
+        <label class = "form-label" for="startDate">Data de início: </label>
+        <input class = "form-control" type="date" id="input-data" name="startDate" value="" required>
+             </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
