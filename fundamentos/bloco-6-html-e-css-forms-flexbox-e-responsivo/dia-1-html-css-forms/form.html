@@ -30,14 +30,39 @@
 
         <label for = "input-state">Estado</label>
         <select id = "input-state" name = "state" required>
+    
+                <input type = "radio" id = "local1" name = "house-ap" value = "local1" required>
+                <label for="local1">Casa</label>
+                <input type = "radio" id = "local2" name = "house-ap" value = "local2" required>
+                <label for="local2">Apartamento</label>
+    </fieldset>
+
+    <fieldset>
+
+        <label id = "resume-cv">Mini currículo</label>
+        <br>
+        <textarea name = "curriculum" id = "resume-cv" cols = "30" rows ="10" maxlength="1000" required>
+        </textarea>
+        <br>
+        <br>
+        
+        <label for = "input-job">Cargo profissional</label>
+        <br>
+        <input type = "text" placeholder="Digite seu cargo" required id = "input-job" name = "job" maxlength="40">
+        <br>
         <br>
 
-       
-        <input type = "radio" id = "local" name = "house-ap" value = "local1" required> Casa
-        <input type = "radio" id = "local" name = "house-ap" value = "local2" required> Apartamento 
+        <label id = "job-description">Descrição do cargo profissional</label>
         <br>
- 
+        <textarea name = "job-description" id = "job-description" cols = "30" rows ="5" maxlength="500" required>
+        </textarea>
+        <br>
+
+        <label for="startDate">Data de início: </label>
+        <input type="date" id="input-data" name="startDate" value="" required>
+
     </fieldset>
+
     <script src = "script.js"></script>
 </body>
 </html>
