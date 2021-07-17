@@ -49,5 +49,25 @@ function validDate(getDate){
     return true;
   }
 
+  function selectedOption(select){
+    return select.options[select.selectedIndex]
+  }
+
+  let name = document.getElementById['input-name'];
+
+  function selectValidation(select, name){
+    let option = selectedOption(select);
+    let validation = name;
+
+    if(validation.required && (!option || option.disabled)){
+      return false;
+    }
+    return true;
+  }
+
+
+
+
+
     
 
