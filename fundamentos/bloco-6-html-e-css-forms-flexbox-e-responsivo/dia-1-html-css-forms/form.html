@@ -10,10 +10,19 @@
     <script src = "jquery-3.6.0.min.js"></script>
     <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+
+<header>
     <div class = "container">
     <h1 class = "display-2">Formulário</h1>
+    <p>Preencha os campos abaixo com as informações do currículo</p>
     </div>
+</header>
+
+<main>
+
+    <form id = cv-form>
 
     <div class = "container">
         <label  class="form-label" for = "input-name">Nome completo</label>
@@ -89,6 +98,13 @@
         <label class = "form-label" for="startDate">Data de início: </label>
         <input class = "form-control" type="date" id="input-data" name="startDate" value="" required>
              </div>
+        
+        <button class = "submit-button" type = "submit">Enviar</button>
+        <button class = "clear-button" type= "button">Limpar</button>
+
+</form>
+
+</main>
 
     <script src = "script.js"></script>
 </body>
