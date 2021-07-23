@@ -53,7 +53,7 @@ const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente !`);
 
-const factorial = number => {
+/*const factorial = number => {
     let result = 1;
 
     for (let index = 2; index <= number; index += 1) {
@@ -63,8 +63,27 @@ const factorial = number => {
     return result;
 }
 
-console.log(factorial(5));
+console.log(factorial(5));*/
 
 // ternary operator
 const factorial = number => number > 1 ? number * factorial(number - 1) : 1;
 console.log(factorial(5));
+
+
+
+const longestWord = text => {
+    let wordArray = text.split(' ');
+    let maxLength = 0;
+    let result = '';
+
+    for (const word of wordArray) {
+        if (word.length > maxLength) {
+            maxLength = word.length;
+            result = word;
+        }
+    }
+
+    return result;
+}
+
+console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"));
