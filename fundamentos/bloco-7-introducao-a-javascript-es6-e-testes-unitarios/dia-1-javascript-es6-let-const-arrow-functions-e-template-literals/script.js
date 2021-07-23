@@ -32,7 +32,7 @@
 //Utilize template literals para que a chamada console.log(<seu código>oddsAndEvens<seu código>); retorne "Os números 2,3,4,7,10,13 se encontram ordenados de forma crescente!".
 //Bônus (opcional): tente fazer o mesmo exercício utilizando o método array.sort()
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+/*const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 // Seu código aqui.
 
@@ -47,8 +47,24 @@ const crescentNumber = () => {
     return oddsAndEvens;
 }
 
-console.log(`Os números ${crescentNumber ()} se encontram ordenados de forma crescente! `); 
+console.log(`Os números ${crescentNumber ()} se encontram ordenados de forma crescente! `); */
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente !`);
+
+const factorial = number => {
+    let result = 1;
+
+    for (let index = 2; index <= number; index += 1) {
+        result *= index;
+    }
+
+    return result;
+}
+
+console.log(factorial(5));
+
+// ternary operator
+const factorial = number => number > 1 ? number * factorial(number - 1) : 1;
+console.log(factorial(5));
