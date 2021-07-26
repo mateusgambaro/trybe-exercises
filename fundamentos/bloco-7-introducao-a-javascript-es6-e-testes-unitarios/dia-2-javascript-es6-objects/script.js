@@ -1,4 +1,4 @@
-const order = {
+/*const order = {
     name: 'Rafael Andrade',
     phoneNumber: '11-98763-1416',
     address: {
@@ -60,4 +60,35 @@ const orderModifier = (order) => {
     console.log(`Olá ${newBuyer}, o total do seu pedido de ${pizzas[0]}, ${pizzas[1]} e ${drinks} é R$ ${newTotal}`);
   }
   
-  orderModifier(order);
+  orderModifier(order);*/
+
+  const lesson1 = {
+    materia: 'Matemática',
+    numeroEstudantes: 20,
+    professor: 'Maria Clara',
+    turno: 'manhã',
+  };
+  
+  const lesson2 = {
+    materia: 'História',
+    numeroEstudantes: 20,
+    professor: 'Carlos',
+  };
+  
+  const lesson3 = {
+    materia: 'Matemática',
+    numeroEstudantes: 10,
+    professor: 'Maria Clara',
+    turno: 'noite',
+  };
+
+  //Crie uma função para adicionar o turno da manhã na lesson2 . Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
+
+  const newKey = (obj, key, value) => {
+    obj[key] = value;
+  };
+  
+  newKey(lesson2, 'turno', 'manhã');
+
+  console.log(lesson2);
+
