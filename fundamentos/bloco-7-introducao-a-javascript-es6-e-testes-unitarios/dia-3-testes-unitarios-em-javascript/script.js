@@ -70,7 +70,7 @@ assert.strictEqual(expected, 3);
 
 assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);*/
 
-const assert = require('assert');
+/*const assert = require('assert');
 
 function myFizzBuzz(num) {
   if (typeof num !== 'number') return false;
@@ -86,5 +86,25 @@ assert.strictEqual(myFizzBuzz(15), 'fizzbuzz', 'Retorno deve ser 0');
 assert.strictEqual(myFizzBuzz(3), 'fizz', 'Retorno deve ser 0');
 assert.strictEqual(myFizzBuzz(5), 'buzz', 'Retorno deve ser 0');
 assert.strictEqual(myFizzBuzz(22), 22, 'Retorno deve ser 0');
-assert.strictEqual(myFizzBuzz('test'),false, 'Deve ser um número');
+assert.strictEqual(myFizzBuzz('test'),false, 'Deve ser um número');*/
 
+const assert = require('assert');
+
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
+
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+assert.deepStrictEqual(obj1, obj2);
+assert.notDeepStrictEqual(obj1, obj3);
+assert.notDeepStrictEqual(obj2, obj3);
