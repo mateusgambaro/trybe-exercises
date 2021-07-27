@@ -44,7 +44,7 @@ assert.deepStrictEqual(myList, [5, 6, 7, 8]);
 
 assert.deepStrictEqual(myRemove(expected, 5), expected);*/
 
-const assert = require('assert');
+/*const assert = require('assert');
 
 function myRemoveWithoutCopy(arr, item) {
   for (let index = 0, len = arr.length; index < len; index += 1) {
@@ -68,6 +68,23 @@ assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 myRemoveWithoutCopy(expected, 1);
 assert.strictEqual(expected, 3);
 
-assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);*/
 
+const assert = require('assert');
+
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}
+
+// implemente seus testes aqui
+
+assert.strictEqual(myFizzBuzz(15), 'fizzbuzz', 'Retorno deve ser 0');
+assert.strictEqual(myFizzBuzz(3), 'fizz', 'Retorno deve ser 0');
+assert.strictEqual(myFizzBuzz(5), 'buzz', 'Retorno deve ser 0');
+assert.strictEqual(myFizzBuzz(22), 22, 'Retorno deve ser 0');
+assert.strictEqual(myFizzBuzz('test'),false, 'Deve ser um número');
 
