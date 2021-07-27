@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 
 function sum(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
@@ -17,4 +17,30 @@ assert.throws(() => {
 });
 assert.throws(() => {
     sum(4,'5');
-}, /^Error: parameters must be numbers$/);
+}, /^Error: parameters must be numbers$/);*/
+
+const assert = require('assert');
+
+function myRemove(arr, item) {
+  let newArr = [];
+  for (let index = 0; index < arr.length; index += 1) {
+    if (item !== arr[index]) {
+      newArr.push(arr[index]);
+    }
+  }
+  return newArr;
+}
+
+// implemente seus testes aqui
+
+const expected = [1, 2, 3, 4];
+
+assert.deepStrictEqual(myRemove(expected, 3), [1, 2, 4]);
+assert.notDeepStrictEqual(myRemove(expected, 3), expected);
+
+const myList = [5, 6, 7, 8];
+myRemove(myList, 5);
+assert.deepStrictEqual(myList, [5, 6, 7, 8]);
+
+assert.deepStrictEqual(myRemove(expected, 5), expected);
+
