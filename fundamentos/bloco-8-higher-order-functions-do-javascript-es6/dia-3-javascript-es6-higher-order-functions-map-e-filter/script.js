@@ -237,7 +237,7 @@ const books = [
   assert.deepStrictEqual(fantasyOrScienceFiction(), expectedResult);*/
 
   // 4.  Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
-  const expectedResult = [
+  /*const expectedResult = [
     {
       id: 6,
       name: 'O Chamado de Cthulhu',
@@ -270,4 +270,21 @@ const books = [
 
   }
   
-  assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
+  assert.deepStrictEqual(oldBooksOrdered(), expectedResult);*/
+
+  // 5. Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+
+  const expectedResult = [
+    'Frank Herbert',
+    'George R. R. Martin',
+    'Isaac Asimov',
+    'J. R. R. Tolkien',
+  ];
+  
+  function fantasyOrScienceFictionAuthors() {
+    return books
+    .filter((book) => ['Fantasia', 'Ficção Científica'].includes(book.genre))
+    .map((book) => book.author.name).sort();
+  }
+  
+  assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
