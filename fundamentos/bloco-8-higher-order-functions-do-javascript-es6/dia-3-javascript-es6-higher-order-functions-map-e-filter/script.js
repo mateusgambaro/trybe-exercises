@@ -199,7 +199,7 @@ const books = [
 
   // 3 - Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
 
-  const expectedResult = [
+  /*const expectedResult = [
     { 
       id: 1,
       name: 'As Crônicas de Gelo e Fogo',
@@ -234,4 +234,40 @@ const books = [
     return books.filter((genrer) => (genrer.genre === "Fantasia" || genrer.genre === "Ficção Científica"));
   }
   
-  assert.deepStrictEqual(fantasyOrScienceFiction(), expectedResult);
+  assert.deepStrictEqual(fantasyOrScienceFiction(), expectedResult);*/
+
+  // 4.  Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+  const expectedResult = [
+    {
+      id: 6,
+      name: 'O Chamado de Cthulhu',
+      genre: 'Terror',
+      author: { name: 'H. P. Lovecraft', birthYear: 1890 },
+      releaseYear: 1928,
+    },
+    {
+      id: 3,
+      name: 'Fundação',
+      genre: 'Ficção Científica',
+      author: { name: 'Isaac Asimov', birthYear: 1920 },
+      releaseYear: 1951,
+    },
+    {
+      id: 2,
+      name: 'O Senhor dos Anéis',
+      genre: 'Fantasia',
+      author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
+      releaseYear: 1954,
+    },
+  ];
+  
+  function oldBooksOrdered() {
+    return books
+    
+    .filter((book) => book.releaseYear <= 1961)
+
+    .sort((obj1, obj2) => obj1.releaseYear - obj2.releaseYear);
+
+  }
+  
+  assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
