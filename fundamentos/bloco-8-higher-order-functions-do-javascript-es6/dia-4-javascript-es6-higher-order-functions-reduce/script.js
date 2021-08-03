@@ -16,7 +16,7 @@ assert.deepStrictEqual(flatten(), ['1', '2', '3', true, 4, 5, 6]);*/
 
 // 2. Crie uma string com os nomes de todas as pessoas autoras.
 
-const assert = require('assert');
+/*const assert = require('assert');
 
 const books = [
   {
@@ -79,7 +79,7 @@ const books = [
     },
     releaseYear: 1928,
   },
-];
+];*/
 
 /*const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
@@ -112,7 +112,7 @@ assert.strictEqual(averageAge(), expectedResult);*/
 
 // 4. Encontre o livro com o maior nome.
 
-const expectedResult = {
+/*const expectedResult = {
     id: 1,
     name: 'As Crônicas de Gelo e Fogo',
     genre: 'Fantasia',
@@ -132,4 +132,22 @@ const expectedResult = {
     })
   }
   
-  assert.deepStrictEqual(longestNamedBook(), expectedResult);
+  assert.deepStrictEqual(longestNamedBook(), expectedResult);*/
+
+  const assert = require('assert');
+
+  const names = [
+    'Aanemarie', 'Adervandes', 'Akifusa',
+    'Abegildo', 'Adicellia', 'Aladonata',
+    'Abeladerco', 'Adieidy', 'Alarucha',
+  ];
+  
+  function containsA() {
+    return names.reduce((acc, curr) =>
+       acc + curr.split('').reduce((acumulator, current) => {
+          if (current === 'a' || current === 'A') return acumulator + 1;
+          return acumulator;
+       }, 0), 0);
+  }
+  
+  assert.deepStrictEqual(containsA(), 20);
