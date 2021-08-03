@@ -81,7 +81,7 @@ const books = [
   },
 ];
 
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+/*const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
 function reduceNames() {
     
@@ -94,4 +94,18 @@ function reduceNames() {
       
 
 
-assert.strictEqual(reduceNames(), expectedResult);
+assert.strictEqual(reduceNames(), expectedResult);*/
+
+// 3. Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+
+const expectedResult = 43;
+
+function averageAge() {
+  const numberOfBooks = books.length;
+  const sumOfAges = books.reduce((sum, book) => (
+    sum + (book.releaseYear - book.author.birthYear)
+  ), 0);
+  return sumOfAges / numberOfBooks;
+}
+
+assert.strictEqual(averageAge(), expectedResult);
