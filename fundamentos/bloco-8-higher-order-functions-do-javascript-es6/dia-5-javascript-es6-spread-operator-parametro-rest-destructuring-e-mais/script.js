@@ -1,4 +1,6 @@
-const assert = require('assert');
+// SPREAD OPERATOR 
+
+/*const assert = require('assert');
 
 const rectangleArea = (width, height) => width * height;
 
@@ -22,5 +24,18 @@ const rectangles = [rectangle1, rectangle2, rectangle3];
 
 rectangles.forEach((rectangle) => {
   assert.strictEqual(rectangleArea(...rectangle), rectangle[0] * rectangle[1]);
-});
+});*/
+
+// REST PARAMETER
+
+const assert = require('assert');
+
+// escreva sum abaixo
+const sum = (...numbers) => numbers.reduce(((acc, val) => acc + val), 0);
+
+assert.strictEqual(sum(), 0);
+assert.strictEqual(sum(1), 1);
+assert.strictEqual(sum(1, 2), 3);
+assert.strictEqual(sum(1, 2, 3), 6);
+assert.strictEqual(sum(1, 2, 3, 4), 10);
 
