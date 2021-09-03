@@ -92,8 +92,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 11.3 - _[Projeto - Movie Cards Library](https://github.com/mateusgambaro/mateusgambaro.github.io/tree/main/projetos/movie-cards-library)_
 
 ##### Bloco 12: Componentes com Estado, Eventos e Formulários com React
-- [ ] 12.1 - Componentes com estado e eventos
-- [ ] 12.2 - Formulários no React
+- [X] 12.1 - Componentes com estado e eventos
+- [X] 12.2 - Formulários no React
 - [ ] 12.3 - Projeto - Movie Cards Library Stateful
 
 ##### Bloco 13: Ciclo de Vida de Componentes e React Router
