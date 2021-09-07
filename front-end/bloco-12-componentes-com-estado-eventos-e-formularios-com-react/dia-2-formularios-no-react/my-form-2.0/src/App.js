@@ -1,6 +1,35 @@
 import React, { Component } from 'react'
 
 export class Forms extends Component {
+  constructor() {
+    super()
+
+    this.handleChange = this.handleChange.bind(this)
+
+    this.state = {
+      nome:'',
+      email: '',
+      cpf: '',
+      endereço: '',
+      cidade: '',
+      estado: '',
+      CasaApto: false,
+      cv:'',
+      job:'',
+      jobdescription:''
+
+    }
+  }
+
+  handleChange({target}) {
+    const {name} = target
+    const value = target.type === 'radio' ? target.checked : target.value
+    
+    this.setState({
+      [name]: value
+    });
+
+  }
   render() {
     return (
       <div>
@@ -12,6 +41,7 @@ export class Forms extends Component {
             <input name="nome" 
             type="text" 
             maxLength="40"
+            value={this.state.nome} onChange={this.handleChange}
             required
             />
           </label>
@@ -21,6 +51,7 @@ export class Forms extends Component {
             <input name="email" 
             type="text"
             maxLength="50"
+            value={this.state.email} onChange={this.handleChange}
             required
             />
           </label>
@@ -30,6 +61,7 @@ export class Forms extends Component {
             <input name="cpf" 
             type="text"
             maxLength="11"
+            value={this.state.cpf} onChange={this.handleChange}
             required
             />
           </label>
@@ -37,9 +69,10 @@ export class Forms extends Component {
           <label>
             Endereço
             <textarea 
-            name="endereço" 
+            name="endereco" 
             type="text"
             maxLength="200"
+            value={this.state.endereco} onChange={this.handleChange}
             required
             />
           </label>
@@ -49,29 +82,32 @@ export class Forms extends Component {
             <textarea name="cidade" 
             type="text"
             maxLength="28"
+            value={this.state.cidade} onChange={this.handleChange}
             required
             />
           </label>
 
           <label>
             Estado
-            <select name="estado" required/>
+            <select name="estado"  value={this.state.estado} onChange={this.handleChange} required/>
             <option value =""></option>
           </label>
           
           <label>
             Casa
-            <input name="Casa-Apto"
+            <input name="CasaApto"
             type="radio"
+            value={this.state.CasaApto} onChange={this.handleChange}
             required
             />
           </label>
 
           <label>
             Apartamento
-            <input name="Casa-Apto" 
+            <input name="CasaApto" 
             type="radio"
             required
+            value={this.state.CasaApto} onChange={this.handleChange}
             />
           </label>
 
@@ -82,17 +118,17 @@ export class Forms extends Component {
 
         <label>
             Mini Currículo
-            <textarea name="cv" type="text" maxLength="1000" required/>
+            <textarea name="cv" value={this.state.cv} onChange={this.handleChange} maxLength="1000" required/>
           </label>
 
           <label>
             Cargo
-            <textarea name="job" type="text" maxLength="40" required/>
+            <textarea name="job"  value={this.state.job} onChange={this.handleChange} maxLength="40" required/>
           </label>
 
           <label>
             Descrição do cargo
-            <textarea name="job-description" type="text" maxLength="500" required/>
+            <textarea name="jobdescription" value={this.state.jobdescription} onChange={this.handleChange} maxLength="500" required/>
           </label>
 
         </fieldset>
