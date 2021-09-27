@@ -99,15 +99,15 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 13: Ciclo de Vida de Componentes e React Router
 - [X] 13.1 - Ciclo de vida de componentes
 - [X] 13.2 - React Router
-- [ ] 13.3 - Projeto - Movie Cards Library CRUD
+- [X] 13.3 - _[Projeto - TrybeTunes](https://github.com/tryber/sd-014-b-project-trybetunes/pull/15)_ 
 
 ##### Bloco 14: Metodologias Ágeis
-- [ ] 14.1 - Metodologias Ágeis
-- [ ] 14.2 - Projeto - Frontend Online Store
+- [X] 14.1 - Metodologias Ágeis
+- [X] 14.2 - _[Projeto - Frontend Online Store](https://github.com/tryber/sd-014-b-project-frontend-online-store/tree/main-group-20)_
 
 ##### Bloco 15: Testes automatizados com React Testing Library
-- [ ] 15.2 - RTL - Mocks e Inputs
-- [ ] 15.3 - RTL - Testando React Router
+- [X] 15.2 - RTL - Mocks e Inputs
+- [X] 15.3 - RTL - Testando React Router
 - [ ] 15.4 - Projeto - Testes em React
 
 ##### Bloco 16: Gerenciamento de estado com Redux
