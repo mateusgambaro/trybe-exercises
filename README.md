@@ -108,10 +108,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 15: Testes automatizados com React Testing Library
 - [X] 15.2 - RTL - Mocks e Inputs
 - [X] 15.3 - RTL - Testando React Router
-- [ ] 15.4 - Projeto - Testes em React
+- [X] 15.4 - _[Projeto - Testes em React](https://github.com/tryber/sd-014-b-project-react-testing-library/pull/68)_
 
 ##### Bloco 16: Gerenciamento de estado com Redux
-- [ ] 16.1 - Introdução ao Redux - O estado global da aplicação
+- [X] 16.1 - Introdução ao Redux - O estado global da aplicação
 - [ ] 16.2 - Usando o Redux no React
 - [ ] 16.3 - Usando o Redux no React - Prática
 - [ ] 16.4 - Usando o Redux no React - Actions Assíncronas
