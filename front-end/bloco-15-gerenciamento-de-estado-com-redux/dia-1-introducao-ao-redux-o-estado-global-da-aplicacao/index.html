@@ -38,17 +38,14 @@
         index: 0,
       };
 
-      const next = 'NEXT_COLOR';
-      const previous = 'PREVIOUS_COLOR'
-
       function colorReducer(state = ESTADO_INICIAL, action) {
           switch(action.type) {
-              case next:
+              case 'NEXT_COLOR':
                   return {
                       ...state,
                       index: state.index === state.colors.length - 1 ? 0 : state.index + 1, // state.colors.length - 1 para caso o index seja igual a 5, clicando em next volta para o início.
                   }
-              case previous:
+              case 'PREVIOUS_COLOR':
                   return {
                       ...state,
                       index: state.index === 0 ? state.colors.length -1 : state.index - 1,
@@ -57,9 +54,28 @@
               default:
             return state;
           }
-      }
+        }
 
       const store = Redux.createStore(colorReducer);
+      console.log(store);
+     
+
+      document.getElementById('next').addEventListener('click', () => {
+          store.dispatch({ type: 'NEXT_COLOR'});
+      });
+      document.getElementById('previous').addEventListener('click', () => {
+          store.dispatch({ type: 'PREVIOUS_COLOR'});
+      });
+
+      store.subscribe(() => {
+      const { colors, index } = store.getState();
+      document.getElementById('value').innerHTML = colors[index];
+      document.getElementById('container').style.backgroundColor = colors[index];
+    });
+
+
+    
+    
     
     </script>
   </body>
