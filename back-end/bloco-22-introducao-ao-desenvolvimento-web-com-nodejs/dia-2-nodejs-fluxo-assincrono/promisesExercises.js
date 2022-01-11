@@ -29,12 +29,16 @@ function getRandomNumber() {
   return Math.floor(Math.random() * 100 + 1);
 }
 
-function callDoMath() {
+async function callDoMath() {
 
-  const randomNumbers = Array.from({length: 3}).map(getRandomNumber);
+  const randomNumbers = Array.from({length: 3}).map(getRandomNumber());
 
-  promiseONE(...randomNumbers)
-    .then(resultado => console.log(resultado))
-    .catch(err => console.log(err.message)) 
+    try {
+    const result = await promiseONE(...randomNumbers);
+    console.log(result);
+    }
+    catch(err) {
+      console.log(err);
+    }
 }
 
