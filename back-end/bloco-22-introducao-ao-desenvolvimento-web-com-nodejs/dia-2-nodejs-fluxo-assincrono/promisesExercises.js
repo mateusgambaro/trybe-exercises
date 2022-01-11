@@ -44,7 +44,7 @@ async function callDoMath() {
 
 const fs = require('fs').promises;
 
-fs.readFile('./simpsons.json', 'utf8')
+/* fs.readFile('./simpsons.json', 'utf8')
   .then((fileContent) => {
     return JSON.parse(fileContent);
   })
@@ -54,5 +54,21 @@ fs.readFile('./simpsons.json', 'utf8')
   .then((strings) => {
     strings.forEach((string) => console.log(string));
   });
+ */
+  
+async function getSimpsonsById(id) {
+  const simpsons = await 
+  fs.readFile('./simpsons.json', 'utf8')
+  .then((content) => JSON.parse(content));
 
-    
+  const chosenSimpson = simpsons.find((simpson) => simpson.id === id);
+
+  if(!chosenSimpson) {
+    throw new Error('id não encontrado');
+  }
+
+  return chosenSimpson;
+}
+getSimpsonsById('5')
+.then(resolve => console.log(resolve))
+.catch(err => console.log(err.message))
