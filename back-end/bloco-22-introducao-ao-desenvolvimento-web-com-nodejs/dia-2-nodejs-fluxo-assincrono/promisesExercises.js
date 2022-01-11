@@ -24,4 +24,17 @@ promiseONE(1, 1, 'a')
 
 promiseONE(1, 1, 1)
   .then(resolve => console.log(resolve))
-  .catch(error => console.log(error))
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * 100 + 1);
+}
+
+function callDoMath() {
+
+  const randomNumbers = Array.from({length: 3}).map(getRandomNumber);
+
+  promiseONE(...randomNumbers)
+    .then(resultado => console.log(resultado))
+    .catch(err => console.log(err.message)) 
+}
+
