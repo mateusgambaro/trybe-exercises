@@ -5,10 +5,10 @@ const app = express();
 
 app.use(bodyParser.json());
 
-/* app.post('/hello', (req, res) => {
+app.post('/hello', (req, res) => {
   const { name }  = req.body;
   res.status(200).json({ "message": `Hello, ${name}!` })
-}); */
+});
 
 /* app.post('/greetings', (req, res) => {
   const { name, age } = req.body;
