@@ -25,3 +25,9 @@ const isValidPassword = (req, res, next) => {
 
     next();
 }
+
+module.exports = {
+  isValidUserName,
+  isValidEmail,
+  isValidPassword
+};
