@@ -138,7 +138,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 19-1: _Utilizando Containers - Docker_
 - [ ] 19-2: _Manipulação e Criação de Imagens no Docker_
 - [ ] 19-3: _Orquestrando Containers com Docker Compose_
-- [ ] 19-4: _[Projeto - Docker Todo-List]()_
+- [ ] 19-4: _[Projeto - Docker Todo-List](https://github.com/tryber/sd-014-b-project-docker-todo-list/pull/64)_
 
 ##### Bloco 20: Introdução à SQL
 
@@ -147,14 +147,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 20-2: _Encontrando dados em um banco de dados_
 - [ ] 20-3: _Filtrando dados de forma específica_
 - [ ] 20-4: _Manipulando Tabelas_
-- [ ] 20-5: _[Projeto - All for One]()_
+- [ ] 20-5: _[Projeto - All for One](https://github.com/tryber/sd-014-b-mysql-all-for-one/pull/7)_
 
 ##### Bloco 21: Funções SQL, JOINs e Normalização
 
 - [ ] 21-1: _Funções mais usadas no SQL_
 - [ ] 21-2: _Descomplicando JOINs_
 - [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-4: _[Projeto - One For All]()_
+- [ ] 21-4: _[Projeto - One For All](https://github.com/tryber/sd-014-b-mysql-one-for-all/pull/24)_
 
 ##### Bloco 23: Introdução ao desenvolvimento Web com Node.j3
 
@@ -178,12 +178,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] 23-1: _Introdução - Node.js: ORM e Autenticação_
-- [ ] 23-1: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 23-2: _ORM - Associations_
-- [ ] 23-3: _JWT - (Json Web Token)_
-- [ ] 23-4: _Testando APIs com Testes de Integração_
-- [ ] 23-5: _[Projeto - API de Blogs]()_
+- [ ] 24-1: _Introdução - Node.js: ORM e Autenticação_
+- [ ] 24-1: _ORM - Interface da aplicação com o banco de dados_
+- [ ] 24-2: _ORM - Associations_
+- [ ] 24-3: _JWT - (Json Web Token)_
+- [ ] 24-4: _Testando APIs com Testes de Integração_
+- [ ] 24-5: _[Projeto - API de Blogs]()_
 
 
 ##### Bloco 25: Deployment
