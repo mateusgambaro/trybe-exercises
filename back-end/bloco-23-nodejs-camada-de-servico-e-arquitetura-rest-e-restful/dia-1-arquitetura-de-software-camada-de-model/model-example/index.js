@@ -36,6 +36,14 @@
       res.status(201).json({message: 'autor criado com sucesso'});
     });
 
+    app.post('/user', async (req, res) => {
+      const { firstName, lastName, email, password } = req.body;
+
+      
+
+      res.status(201).json({message: 'autor criado com sucesso'});
+    });
+
     app.get('/books', async (req, res) => {
       const { author_id } = req.query;
 
