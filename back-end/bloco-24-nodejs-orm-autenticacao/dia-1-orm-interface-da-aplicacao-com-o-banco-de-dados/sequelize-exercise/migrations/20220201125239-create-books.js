@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
-     await queryInterface.createTable('Books', { 
+ up (queryInterface, Sequelize) {
+     return queryInterface.createTable('Books', { 
        id: {
         allowNull: false,
         autoIncrement: true,
@@ -24,15 +24,21 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
+        field: 'created_at',
       },
+      updatedAt: {
+      allowNull: false,
+      type: Sequelize.DATE,
+      field: 'updated_at', // a coluna será criada no banco com este nome
+    }
       
       });
    
   },
 
-  async down (queryInterface, Sequelize) {
+   down (queryInterface, Sequelize) {
 
-     await queryInterface.dropTable('Books');
+    return queryInterface.dropTable('Books');
    
   }
 };

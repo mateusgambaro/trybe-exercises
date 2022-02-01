@@ -7,15 +7,17 @@ module.exports = {
         title: 'Leonardo da Vinci',
         author:'Walter Isaac',
         pageQuantity: 340,
-        createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
+        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updated_at: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       {
         title: 'Walden',
         author: 'Henry David Thoreau',
         pageQuantity: 410,
-        createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
-      },
-    ], {})
+        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updated_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+      }]
+    );
   },
 
   async down (queryInterface, Sequelize) {

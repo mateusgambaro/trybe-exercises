@@ -8,7 +8,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-app.use('/books', bookController);
+app.get('/book/:id', bookController.getById);
+app.get('/books', bookController.getAll);
 
 
 app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}!`));
